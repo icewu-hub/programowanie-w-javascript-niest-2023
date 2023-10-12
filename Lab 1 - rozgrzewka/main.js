@@ -35,7 +35,7 @@ function calc(){
     let avg = 0
     let min = 0
     let max = 0
-    var temp = []
+    let temp = []
 
     inputs.forEach(element => {
       sum += +element.value
@@ -43,10 +43,8 @@ function calc(){
     });
     avg = sum/inputs.length
     
-    console.log(temp)
     min = Math.min(...temp)
     max = Math.max(...temp)
     
     wynikiPojemnik.innerHTML = `Sum: ${sum} <br /> Avg: ${avg} <br /> Min: ${min} <br /> Max: ${max}`;
-  
 }

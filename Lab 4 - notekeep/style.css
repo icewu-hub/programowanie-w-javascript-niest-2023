@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+label {
+  margin-bottom: 8px;
+}
+.content-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
+}
+#search {
+  padding: 8px;
+  margin-bottom: 16px;
+  width: 200px;
+  box-sizing: border-box;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#addForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-right: 20px;
+}
+div {
+  margin: 20px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+input,
+select,
+button {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+input[type="color"] {
+  height: 40px;
+  padding: 4px;
+  width: 30%;
+}
+button {
+  cursor: pointer;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 4px 8px;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+#notes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.note {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: min-height 0.3s;
+}
+
+.note h1 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.note p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.note button {
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  font-size: 10px;
+  padding: 4px 6px;
+  position: absolute;
+  top: 5px;
+  width: 40px;
+}
+
+.note .delete-button {
+  right: 50px;
+}
+
+.note .pin-button {
+  right: 5px;
+}
+.pinned {
+  border: #2980b9 5px solid;
+}

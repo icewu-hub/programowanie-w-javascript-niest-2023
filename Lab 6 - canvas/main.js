@@ -8,7 +8,7 @@ let ballsArray = [];
 const canvasBody = document.getElementById("canvasBody");
 let canvas = canvasBody.getContext("2d");
 
-startButton.addEventListener("click", function (e) {
+startButton.addEventListener("click", () => {
   if (ballsCount.value == "" || maxDistance.value == "") {
     alert("You need to fill both fields");
   } else {
@@ -16,7 +16,7 @@ startButton.addEventListener("click", function (e) {
   }
 });
 
-resetButton.addEventListener("click", function (e) {
+resetButton.addEventListener("click", () => {
   canvas.clearRect(0, 0, canvasBody.width, canvasBody.height);
   balls = [];
 });

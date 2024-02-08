@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <audio src="./sounds/clap.wav" controls id="s1"></audio>
-    <audio src="./sounds/hihat.wav" controls id="s2"></audio>
+  </head>
+  <body>
+    <audio src="./sounds/boom.wav" id="s1"></audio>
+    <audio src="./sounds/clap.wav" id="s2"></audio>
+    <audio src="./sounds/hihat.wav" id="s3"></audio>
+    <audio src="./sounds/kick.wav" id="s4"></audio>
+    <audio src="./sounds/openhat.wav" id="s5"></audio>
+    <audio src="./sounds/ride.wav" id="s6"></audio>
+    <audio src="./sounds/snare.wav" id="s7"></audio>
+    <audio src="./sounds/tink.wav" id="s8"></audio>
+    <audio src="./sounds/tom.wav" id="s9"></audio>
+    <div id="soundBoardMenu"></div>
+    <br />
+    <div id="tracksContainer">
+      <div>
+        <h2>1</h2>
+        <button class="record">Record</button>
+        <button class="play">Play</button>
+      </div>
+      <div>
+        <h2>2</h2>
+        <button class="record">Record</button>
+        <button class="play">Play</button>
+      </div>
+      <div>
+        <h2>3</h2>
+        <button class="record">Record</button>
+        <button class="play">Play</button>
+      </div>
+      <div>
+        <h2>4</h2>
+        <button class="record">Record</button>
+        <button class="play">Play</button>
+      </div>
+    </div>
+    <br />
+    <button id="playAll">Play All</button>
+    <div>
+      <h1>Metronom</h1>
+      <label for="metronom"
+        >Ilość uderzeń na minutę
+        <input id="metronom" name="metronom" type="number" value="60" />
+      </label>
+      <button id="metronomBtn">play/pause</button>
+    </div>
     <script src="drumkit.js"></script>
-</body> 
+  </body>
 </html>

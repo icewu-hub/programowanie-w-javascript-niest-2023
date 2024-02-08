@@ -92,6 +92,10 @@ button:hover {
   flex-direction: column;
   position: relative;
   transition: min-height 0.3s;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .note h1 {

@@ -50,9 +50,9 @@ function animate() {
     ball.draw();
   });
 
-  requestAnimationFrame(animate);
-
-  if (ballsArray.length === 0) {
+  if (ballsArray.length > 0) {
+    requestAnimationFrame(animate);
+  } else {
     cancelAnimationFrame(animate);
     startButton.disabled = false;
   }

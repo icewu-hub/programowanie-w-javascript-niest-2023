@@ -77,23 +77,23 @@ function stopAllRecordings() {
 
 function record(track) {
   stopAllRecordings();
-  track["sound"] = [];
-  track["timeStamp"] = [];
-  track["startTime"] = Date.now();
+  track.sound = [];
+  track.timeStamp = [];
+  track.startTime = Date.now();
   document.addEventListener("keypress", (e) => listen(track, e));
 }
 
 function listen(track, key) {
-  track["sound"].push(key.key);
-  track["timeStamp"].push(Date.now());
+  track.sound.push(key.key);
+  track.timeStamp.push(Date.now());
 }
 
 function playRecording(track) {
   console.log(tracks);
-  for (let x = 0; x < track["sound"].length; x++) {
+  for (let x = 0; x < track.sound.length; x++) {
     setTimeout(() => {
-      playSound(KeyToSound[track["sound"][x]]);
-    }, track["timeStamp"][x] - track["startTime"]);
+      playSound(KeyToSound[track.sound[x]]);
+    }, track.timeStamp[x] - track.startTime);
   }
 }
 
